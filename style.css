@@ -1,0 +1,19 @@
+body {
+    display: grid;
+}
+header {
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+}
+img {
+    width: 40%;
+}
+.pictures {
+   display: grid;
+   justify-items: center;
+   justify-content: center;
+}
+figcaption {
+    font-size: 1em;
+}
