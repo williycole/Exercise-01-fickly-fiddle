@@ -6,8 +6,11 @@ header {
     justify-items: center;
     justify-content: center;
 }
-img {
-    width: 40%;
+#landing-pic-top {
+    width: 50%;
+}
+#landing-pic-bottom {
+    width: 100%;
 }
 .pictures {
    display: grid;
