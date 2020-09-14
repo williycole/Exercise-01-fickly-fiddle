@@ -1,113 +1,168 @@
+/*==========Mobile View==========*/
 body {
     display: grid;
+    justify-items:center;
+    align-items: center;
     background: rgba(49, 48, 48, 0.116);
 }
 
-header {
-    display: grid;
-    justify-items: center;
-    justify-content: center;
-}
-
-#landing-pic-top {
-    width: 70%;
-    padding: 20px 0px 0px 0px ;;
-}
-
-#landing-pic-bottom {
-    width: 100%;
-    padding: 50px 0px 0px 0px ;;
+#landing-pic-top, #ad-pic {
+    width: 80%;
+    /* padding: 20px 0px 0px 0px ; */
 }
 
 .pictures {
-   display: grid;
-   justify-items: center;
-   justify-content: center;
-}
-
-figure {
-   display: flex
-}
-
-figcaption {
-    display: flex;
-    justify-content: flex-start;
-    align-content: flex-start;
-    font-size: .8em;
-    text-align: left;  
-    padding: 15px 0px 0px 0px; 
-}
-
-main {
- 
-    margin: 0px 28% 0px 28%;
+    display: grid;
+    justify-items:center;
+    align-items: center;
 }
 
 h1 {
     text-align: center;
-    font-size: 2.5em;
-    font-weight: 500;
-    margin: 0px 15% 0px 15%;
+    font-size: 2.0em;
 }
-
-h2 {
-    padding: 25px 0px 0px 0px;
-    margin: 0px;
-    font-size: 1.0em;
-    letter-spacing: .2rem;
-    text-transform: uppercase;
-}
-
-.ad {
-    text-align: center;
-    color: rgb(100, 172, 121);
-}
-
-.less-padding{
-    padding: 0px;
-}
-
-ol {
-    padding: 0;
-    margin:0;
-}
-
-li {
-    padding: 25px 0px 0px 0px;
-    margin: 0px 25px 0px 25px;
-    font-weight: 600;
-    letter-spacing: .3rem;
-    font-size: 1.3em;
-    text-transform: uppercase;
-    color: rgb(100, 172, 121);
-
-}
-
-p {
-    padding: 25px 0px 5px 0px;
-    font-family: 'Times New Roman', Times, serif;
-}
-
 
 a {
     border-bottom: 1.9px solid rgba(128, 128, 128, 0.705);
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: none;
-    color:black;
+    color: black;
 }
 
-.correct-spacing {
-    padding: 0px 0px 0px 5px;
-    font-weight: 400;
+figcaption {
+    width: 80%;
+    font-size: .8em;
 }
+
 .align-left {
     display: grid;
+    justify-items:center;
+    align-items: center;
     text-align: left;
 }
 
-.ad {
-    font-size: 25px;
+li, h2{
+    text-transform: uppercase;
+    color: rgb(100, 172, 121);
 }
-.smaller-h2 {
-    font-size: 0.8em;
+
+h2 {
+    font-size: .9em;
+}
+/*==========Desktop View==========*/
+@media (min-width:900px){
+    body {
+        display: grid;
+        background: rgba(49, 48, 48, 0.116);
+    }
+
+    header {
+        display: grid;
+        justify-items: center;
+        justify-content: center;
+    }
+
+    #landing-pic-top {
+        width: 70%;
+        padding: 20px 0px 0px 0px ;;
+    }
+
+    #landing-pic-bottom {
+        width: 100%;
+        padding: 50px 0px 0px 0px ;;
+    }
+
+    .pictures {
+       display: grid;
+       justify-items: center;
+       justify-content: center;
+    }
+
+    figure {
+       display: flex
+    }
+
+    figcaption {
+        /* display: flex;
+        width: auto;
+        justify-content: flex-start;
+        align-content: flex-start; */
+        font-size: .8em;
+        text-align: left;  
+        padding: 15px 0px 0px 0px; 
+    }
+
+    main {
+    
+        margin: 0px 28% 0px 28%;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 2.5em;
+        font-weight: 500;
+        margin: 0px 15% 0px 15%;
+    }
+
+    h2 {
+        padding: 25px 0px 0px 0px;
+        margin: 0px;
+        font-size: 1.0em;
+        letter-spacing: .2rem;
+        text-transform: uppercase;
+    }
+
+    .ad {
+        text-align: center;
+        color: rgb(100, 172, 121);
+    }
+
+    .less-padding{
+        padding: 0px;
+    }
+
+    ol {
+        padding: 0;
+        margin:0;
+    }
+
+    li {
+        padding: 25px 0px 0px 0px;
+        margin: 0px 25px 0px 25px;
+        font-weight: 600;
+        letter-spacing: .3rem;
+        font-size: 1.3em;
+        text-transform: uppercase;
+        color: rgb(100, 172, 121);
+
+    }
+
+    p {
+        padding: 25px 0px 5px 0px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    a {
+        border-bottom: 1.9px solid rgba(128, 128, 128, 0.705);
+        font-weight: 600;
+        text-decoration: none;
+        color:black;
+    }
+
+    .correct-spacing {
+        padding: 0px 0px 0px 5px;
+        font-weight: 400;
+    }
+    .align-left {
+        display: grid;
+        text-align: left;
+    }
+
+    .ad {
+        font-size: 25px;
+    }
+
+    .smaller-h2 {
+        font-size: 0.8em;
+    }
 }
